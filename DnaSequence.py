@@ -6,12 +6,12 @@ def is_valid_dna(string):
     return True
 
 class DnaSequence:
-
     def __init__(self,string):
         if is_valid_dna(string):
             self.dna_sequence=string
         else:
-            raise ValueError
+            print("ValueError: not valid sequence")
+            return
 
     def insert(self,value,index):
         self.dna_sequence=self.dna_sequence[:index]+value+self.dna_sequence[index:]
@@ -23,6 +23,9 @@ class DnaSequence:
             raise ValueError
 
     def __str__(self):
+        if(len(self.dna_sequence)>40):
+            print(self.dna_sequence)
+            return str("{}...{}".format(self.dna_sequence[:32],self.dna_sequence[-3:]))
         return str(self.dna_sequence)
 
     def __eq__(self,dna_sequence):
@@ -33,7 +36,7 @@ class DnaSequence:
 
     def __len__(self):
         return len(self.dna_sequence)
-    
+
     def __getitem__(self, index):
         return self.dna_sequence[index]
 
