@@ -1,1 +1,1 @@
-{"dna_db": [{"sequence": "GGGGGG", "name": "seq1", "id": 1}, {"sequence": "GGGGGGGGG", "name": "seq2", "id": 2}, {"sequence": "AAAA", "name": "sara", "id": 3}, {"sequence": "AAAA", "name": "sara_1", "id": 4}, {"sequence": "GGGGGG", "name": "seq1_1", "id": 5}, {"sequence": "AAAA", "name": "sara_2", "id": 6}], "name_to_id": {"seq1": 1, "seq2": 2, "sara": 3, "sara_1": 4, "seq1_1": 5, "sara_2": 6}, "batch": {"GGGGGGGGGGG": ["new GGGGGGGGG", "run sara"], "sara": ["new AAAA @sara", "run @sara", "batch noa", "dup #3", "run GGGGGGGGGGG"], "@sara": ["run @sara"]}}
+
